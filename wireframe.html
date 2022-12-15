@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script
+      src="https://kit.fontawesome.com/c82f1a3159.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="src/wireframe.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <title>Weather App Wireframe</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="weather-app">
+        <div class="search">
+          <form id="search-city">
+            <div class="row">
+              <div class="col-6">
+                <input
+                  type="text"
+                  placeholder="enter your city"
+                  class="form-control"
+                  autofocus
+                  id="enter-city-input"
+                />
+              </div>
+              <div class="col-3">
+                <input
+                  type="submit"
+                  value="Search"
+                  class="form-control btn btn-primary shadow-sm border-0"
+                  id="submit-form"
+                />
+              </div>
+
+              <div class="col-3">
+                <button class="btn btn-success w-100" id="currentLocation">
+                  Current
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div id="date"></div>
+        <h1></h1>
+
+        <div class="row">
+          <div class="col-6">
+            <div class="card-body shadow-sm" style="width: 15rem">
+              <h2 class="card-title" id="city"></h2>
+              <br />
+              <i class="fa-solid fa-cloud-sun main"></i>
+              <div class="card-text" id="temperature-value"></div>
+              <span class="units">
+                <a href="#" id="celsius-link">°C</a> |
+                <a href="#" id="fahrenheit-link">°F</a>
+              </span>
+
+              <p class="card-text-mini" id="description"></p>
+            </div>
+          </div>
+
+          <div class="col-6">
+            <ul>
+              <li>Humidity: <span id="humidity-value"></span> %</li>
+              <li>Wind: <span id="wind-value"> </span>km/h</li>
+            </ul>
+            <div class="humidity"></div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-2 shadow-sm mini" style="width: 5rem">
+            <p>Mon</p>
+            <i class="fa-solid fa-sun sun"></i>
+            <h5>Lagos</h5>
+            <p>23º</p>
+          </div>
+
+          <div class="col-2 shadow-sm mini" style="width: 5rem">
+            <p>Tue</p>
+            <i class="fa-solid fa-cloud-arrow-up sun"></i>
+            <h5>Lagos</h5>
+            <p>23º</p>
+          </div>
+
+          <div class="col-2 shadow-sm mini" style="width: 5rem">
+            <p>Wed</p>
+            <i class="fa-solid fa-cloud sun"></i>
+            <h5>Lagos</h5>
+            <p>23º</p>
+          </div>
+
+          <div class="col-2 shadow-sm mini" style="width: 5rem">
+            <p>Thu</p>
+            <i class="fa-solid fa-cloud-sun-rain sun"></i>
+            <h5>Lagos</h5>
+            <p>23º</p>
+          </div>
+
+          <div class="col-2 shadow-sm mini" style="width: 5rem">
+            <p>Fri</p>
+            <i class="fa-solid fa-sun sun"></i>
+            <h5>Lagos</h5>
+            <p>23º</p>
+          </div>
+
+          <div class="col-2 shadow-sm mini" style="width: 5rem">
+            <p>Sat</p>
+            <i class="fa-solid fa-cloud-sun sun"></i>
+            <h5>Lagos</h5>
+            <p>23º</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/wireframe.js"></script>
+  </body>
+</html>
