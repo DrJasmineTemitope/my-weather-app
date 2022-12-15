@@ -1,0 +1,71 @@
+body {
+  background: linear-gradient(#b4f27a, #ebeb94);
+}
+
+h5 {
+  font-size: 15px;
+}
+.weather-app {
+  display: block;
+  margin: 50px auto;
+  background: linear-gradient(#cdf2aa, #f4f4d2);
+  max-width: 50%;
+  border: 7px solid greenyellow;
+  border-radius: 15px;
+  box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.date {
+  margin: 30px;
+}
+
+.search {
+  margin: 20px;
+}
+
+.card-title {
+  color: #fff;
+  margin-top: 10px;
+}
+
+.main {
+  font-size: 70px;
+}
+
+.card-body {
+  text-align: center;
+  background: linear-gradient(#a6eb65, #ebeb94);
+  border-radius: 10px;
+  padding: 7px;
+}
+.main {
+  font-size: 80px;
+  color: #f4f4d2;
+}
+
+.card-text {
+  font-size: 60px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.row {
+  margin: 20px;
+}
+.mini {
+  margin-right: 19px;
+  text-align: center;
+  border: 1px solid greenyellow;
+  border-radius: 7px;
+  transition: all 150ms ease-in-out;
+}
+
+.mini:hover {
+  background: greenyellow;
+  color: #fff;
+}
+
+.sun {
+  font-size: 30px;
+  color: #ebeb94;
+}
